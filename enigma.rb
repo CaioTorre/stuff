@@ -112,7 +112,7 @@ while true
     else
         reflectorToUse = 1
     end
-	puts "Want to set up the plugboard? (Y/n)"
+	print "Want to set up the plugboard? (Y/n)"
 	usePlugboard = gets.chomp.downcase == "y"
 	alphabetIDS = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
     if (usePlugboard)

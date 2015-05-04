@@ -6,7 +6,7 @@ def waitForSafeInput num, message
 		if (num) 
 			input = input.to_i
 		else
-			input = input.to_s
+			input = input.to_s.downcase
 		end
 		isOk = !(input.empty?)
 		if (!isOk)
@@ -218,6 +218,9 @@ while true
             puts printSpacer
             puts result
             puts printSpacer
+		when "clear"
+			printSpacer = ""
+			result = ""
         else
 			#if (!inputCMD.empty?)
             inputLetter = inputCMD
